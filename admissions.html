@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Tallinding Islamic Institution</title>
+    <meta name="description" content="Learn how to enroll at Tallinding Islamic Institution. View admission requirements, fees, and download application forms.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Translations -->
+    <script src="assets/js/translations.js"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-green': '#A8D5A2',
+                        'dark-green': '#4C7F4C',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-dark-green font-heading text-2xl font-bold" data-translate="schoolName">
+                    <a href="index.html">Tallinding Islamic Institution</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-light-green underline font-semibold" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Desktop -->
+                    <div class="lang-switcher ml-4">
+                        <button id="lang-ar" class="lang-btn active">العربية</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-dark-green">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="index.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-light-green font-semibold" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Mobile -->
+                    <div class="lang-switcher pt-4 border-t border-gray-200">
+                        <button id="lang-ar-mobile" class="lang-btn active">العربية</button>
+                        <button id="lang-en-mobile" class="lang-btn">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-light-green to-dark-green text-white py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4" data-translate="admissionsTitle">Admissions</h1>
+            <p class="text-xl opacity-90" data-translate="admissionsSubtitle">Begin your journey with us today</p>
+        </div>
+    </section>
+
+    <!-- How to Enroll Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="enrollTitle">How to Enroll</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <!-- Step 1 -->
+                    <div class="flex items-start gap-6">
+                        <div class="bg-dark-green text-white rounded-full w-12 h-12 flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                            1
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="step1Title">Fill Out the Admission Form</h3>
+                            <p class="text-gray-700" data-translate="step1Desc">Download and complete the admission application form with accurate information about the student and parents/guardians.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex items-start gap-6">
+                        <div class="bg-dark-green text-white rounded-full w-12 h-12 flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                            2
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="step2Title">Submit Birth Certificate</h3>
+                            <p class="text-gray-700" data-translate="step2Desc">Provide a certified copy of the student's birth certificate to verify age and identity.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex items-start gap-6">
+                        <div class="bg-dark-green text-white rounded-full w-12 h-12 flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                            3
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="step3Title">Bring Passport Photo</h3>
+                            <p class="text-gray-700" data-translate="step3Desc">Submit two recent passport-sized photographs of the student for official records.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex items-start gap-6">
+                        <div class="bg-dark-green text-white rounded-full w-12 h-12 flex items-center justify-center font-heading text-xl font-bold flex-shrink-0">
+                            4
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="step4Title">Pay Registration Fee</h3>
+                            <p class="text-gray-700" data-translate="step4Desc">Complete the registration process by paying the required registration fee at the school office.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="py-16 md:py-24 bg-light-green bg-opacity-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="requirementsTitle">Required Documents</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-8 card-hover">
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-4">✓</span>
+                            <span class="text-gray-700 text-lg" data-translate="req1">Completed admission application form</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-4">✓</span>
+                            <span class="text-gray-700 text-lg" data-translate="req2">Original birth certificate (with certified copy)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-4">✓</span>
+                            <span class="text-gray-700 text-lg" data-translate="req3">Two recent passport-sized photographs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-4">✓</span>
+                            <span class="text-gray-700 text-lg" data-translate="req4">Previous school records (if transferring)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-4">✓</span>
+                            <span class="text-gray-700 text-lg" data-translate="req5">Medical records and vaccination certificate</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-4">✓</span>
+                            <span class="text-gray-700 text-lg" data-translate="req6">Parent/Guardian identification documents</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-4">✓</span>
+                            <span class="text-gray-700 text-lg" data-translate="req7">Proof of residence</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fees Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="feesTitle">Fee Structure</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-light-green bg-opacity-20 rounded-lg p-6 card-hover">
+                        <h3 class="font-heading text-2xl text-dark-green mb-4" data-translate="regFeeTitle">Registration Fee</h3>
+                        <p class="text-gray-700 mb-2" data-translate="regFeeDesc">One-time payment upon admission</p>
+                        <p class="text-dark-green font-bold text-xl">GMD [Amount]</p>
+                    </div>
+                    
+                    <div class="bg-light-green bg-opacity-20 rounded-lg p-6 card-hover">
+                        <h3 class="font-heading text-2xl text-dark-green mb-4" data-translate="tuitionTitle">Tuition Fee</h3>
+                        <p class="text-gray-700 mb-2" data-translate="tuitionDesc">Per term (3 terms per year)</p>
+                        <p class="text-dark-green font-bold text-xl">GMD [Amount]</p>
+                    </div>
+                    
+                    <div class="bg-light-green bg-opacity-20 rounded-lg p-6 card-hover">
+                        <h3 class="font-heading text-2xl text-dark-green mb-4" data-translate="uniformTitle">Uniform & Materials</h3>
+                        <p class="text-gray-700 mb-2" data-translate="uniformDesc">One-time purchase</p>
+                        <p class="text-dark-green font-bold text-xl">GMD [Amount]</p>
+                    </div>
+                    
+                    <div class="bg-light-green bg-opacity-20 rounded-lg p-6 card-hover">
+                        <h3 class="font-heading text-2xl text-dark-green mb-4" data-translate="annualTitle">Annual Fee</h3>
+                        <p class="text-gray-700 mb-2" data-translate="annualDesc">Covers facilities and activities</p>
+                        <p class="text-dark-green font-bold text-xl">GMD [Amount]</p>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 mt-8 italic" data-translate="feesNote">
+                    * Please contact the school office for current fee amounts and payment plans.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Form Section -->
+    <section class="py-16 md:py-24 bg-dark-green text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-heading text-3xl md:text-4xl mb-6" data-translate="downloadTitle">Download Admission Form</h2>
+            <p class="text-xl mb-8 opacity-90" data-translate="downloadSubtitle">Get started by downloading our admission application form</p>
+            <a href="#" onclick="alert('Admission form will be available for download. Please contact the school office for the form.'); return false;" class="inline-block bg-white text-dark-green px-8 py-3 rounded-lg font-semibold hover:bg-light-green hover:text-white transition duration-300 shadow-lg" data-translate="downloadBtn">
+                Download Admission Form (PDF)
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-green text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-heading text-2xl mb-4" data-translate="schoolName">Tallinding Islamic Institution</h3>
+                    <p class="opacity-90" data-translate="footerRights">© 2025 All rights reserved.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="contactInfo">Contact Information</h4>
+                    <p class="opacity-90 mb-2">📞 Phone: +220 XXX-XXXX</p>
+                    <p class="opacity-90 mb-2">✉️ Email: info@tallindingislamic.edu</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="addressLabel">Address</h4>
+                    <p class="opacity-90" data-translate="address">Tallinding, The Gambia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,284 @@
+/* Custom styles for Tallinding Islamic Institution */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Custom CSS Variables */
+:root {
+  --light-green: #A8D5A2;
+  --white: #FFFFFF;
+  --dark-green: #4C7F4C;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Utilities */
+.text-light-green {
+  color: var(--light-green);
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+}
+
+.text-dark-green {
+  color: var(--dark-green);
+}
+
+.bg-dark-green {
+  background-color: var(--dark-green);
+}
+
+/* Hero Carousel Styles */
+.hero-carousel {
+  position: relative;
+}
+
+.carousel-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+/* Fallback gradients for missing images - only used if background-image fails */
+.carousel-slide:nth-child(1) {
+  background-color: #4C7F4C;
+  background-image: linear-gradient(135deg, rgba(168, 213, 162, 0.8) 0%, rgba(76, 127, 76, 0.8) 100%);
+}
+
+.carousel-slide:nth-child(2) {
+  background-color: #A8D5A2;
+  background-image: linear-gradient(135deg, rgba(76, 127, 76, 0.8) 0%, rgba(168, 213, 162, 0.8) 100%);
+}
+
+.carousel-slide:nth-child(3) {
+  background-color: #A8D5A2;
+  background-image: linear-gradient(135deg, rgba(168, 213, 162, 0.8) 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+
+.carousel-slide:nth-child(4) {
+  background-color: #4C7F4C;
+  background-image: linear-gradient(135deg, rgba(76, 127, 76, 0.8) 0%, rgba(168, 213, 162, 0.8) 100%);
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.3s;
+}
+
+.lightbox.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  animation: zoomIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-lightbox:hover {
+  color: var(--light-green);
+}
+
+/* Gallery Image Hover Effect */
+.gallery-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Hover Effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(76, 127, 76, 0.15);
+}
+
+/* Form Input Focus */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--dark-green);
+  box-shadow: 0 0 0 3px rgba(76, 127, 76, 0.1);
+}
+
+/* Mobile Menu Animation */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.mobile-menu.active {
+  max-height: 500px;
+  transition: max-height 0.3s ease-in;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] .container {
+  direction: rtl;
+}
+
+[dir="rtl"] .flex {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .space-x-6 > * + * {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+[dir="rtl"] .space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+[dir="rtl"] .pl-4 {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .pr-4 {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.lang-btn {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.lang-btn.active {
+  background-color: var(--dark-green);
+  color: white;
+}
+
+.lang-btn:not(.active) {
+  background-color: transparent;
+  color: var(--dark-green);
+  border-color: var(--dark-green);
+}
+
+.lang-btn:not(.active):hover {
+  background-color: var(--light-green);
+  color: white;
+  border-color: var(--light-green);
+}
+
+/* RTL adjustments for language switcher */
+[dir="rtl"] .lang-switcher {
+  flex-direction: row-reverse;
+}
+
+/* Smooth transitions for RTL/LTR switch */
+body {
+  transition: all 0.3s ease;
+}
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Staff - Tallinding Islamic Institution</title>
+    <meta name="description" content="Meet the dedicated teachers and staff of Tallinding Islamic Institution.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Translations -->
+    <script src="assets/js/translations.js"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-green': '#A8D5A2',
+                        'dark-green': '#4C7F4C',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-dark-green font-heading text-2xl font-bold" data-translate="schoolName">
+                    <a href="index.html">Tallinding Islamic Institution</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-light-green underline font-semibold" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Desktop -->
+                    <div class="lang-switcher ml-4">
+                        <button id="lang-ar" class="lang-btn active">العربية</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-dark-green">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="index.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-light-green font-semibold" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Mobile -->
+                    <div class="lang-switcher pt-4 border-t border-gray-200">
+                        <button id="lang-ar-mobile" class="lang-btn active">العربية</button>
+                        <button id="lang-en-mobile" class="lang-btn">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-light-green to-dark-green text-white py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4" data-translate="staffTitle">Our Staff</h1>
+            <p class="text-xl opacity-90" data-translate="staffSubtitle">Meet our dedicated team of educators and administrators</p>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Staff Member 1 -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="https://via.placeholder.com/400x400/A8D5A2/4C7F4C?text=Staff+1" alt="Principal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl text-dark-green mb-2" data-translate="principalName">Sheikh Ahmed Jallow</h3>
+                        <p class="text-dark-green font-semibold mb-4" data-translate="principalRole">Principal</p>
+                        <p class="text-gray-700" data-translate="principalBio">With over 20 years of experience in Islamic education, Sheikh Ahmed leads our institution with dedication and vision.</p>
+                    </div>
+                </div>
+                
+                <!-- Staff Member 2 -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="https://via.placeholder.com/400x400/A8D5A2/4C7F4C?text=Staff+2" alt="Quran Teacher" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl text-dark-green mb-2" data-translate="quranTeacherName">Ustadha Fatou Sarr</h3>
+                        <p class="text-dark-green font-semibold mb-4" data-translate="quranTeacherRole">Qur'an & Islamic Studies Teacher</p>
+                        <p class="text-gray-700" data-translate="quranTeacherBio">Specialized in Tajweed and Qur'an memorization, Ustadha Fatou has helped hundreds of students master the Holy Qur'an.</p>
+                    </div>
+                </div>
+                
+                <!-- Staff Member 3 -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="https://via.placeholder.com/400x400/A8D5A2/4C7F4C?text=Staff+3" alt="Arabic Teacher" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl text-dark-green mb-2" data-translate="arabicTeacherName">Ustadh Mamadou Bah</h3>
+                        <p class="text-dark-green font-semibold mb-4" data-translate="arabicTeacherRole">Arabic Language Teacher</p>
+                        <p class="text-gray-700" data-translate="arabicTeacherBio">Expert in Arabic grammar and literature, Ustadh Mamadou makes learning Arabic engaging and accessible.</p>
+                    </div>
+                </div>
+                
+                <!-- Staff Member 4 -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="https://via.placeholder.com/400x400/A8D5A2/4C7F4C?text=Staff+4" alt="Mathematics Teacher" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl text-dark-green mb-2" data-translate="mathTeacherName">Mr. Lamin Ceesay</h3>
+                        <p class="text-dark-green font-semibold mb-4" data-translate="mathTeacherRole">Mathematics Teacher</p>
+                        <p class="text-gray-700" data-translate="mathTeacherBio">Passionate about mathematics education, Mr. Ceesay helps students develop strong analytical and problem-solving skills.</p>
+                    </div>
+                </div>
+                
+                <!-- Staff Member 5 -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="https://via.placeholder.com/400x400/A8D5A2/4C7F4C?text=Staff+5" alt="English Teacher" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl text-dark-green mb-2" data-translate="englishTeacherName">Ms. Awa Njie</h3>
+                        <p class="text-dark-green font-semibold mb-4" data-translate="englishTeacherRole">English Language Teacher</p>
+                        <p class="text-gray-700" data-translate="englishTeacherBio">Dedicated to improving students' communication skills, Ms. Njie creates an engaging learning environment.</p>
+                    </div>
+                </div>
+                
+                <!-- Staff Member 6 -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="https://via.placeholder.com/400x400/A8D5A2/4C7F4C?text=Staff+6" alt="Science Teacher" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-2xl text-dark-green mb-2" data-translate="scienceTeacherName">Mr. Ousman Jallow</h3>
+                        <p class="text-dark-green font-semibold mb-4" data-translate="scienceTeacherRole">Science Teacher</p>
+                        <p class="text-gray-700" data-translate="scienceTeacherBio">With a background in science education, Mr. Jallow brings scientific concepts to life through practical demonstrations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-green text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-heading text-2xl mb-4" data-translate="schoolName">Tallinding Islamic Institution</h3>
+                    <p class="opacity-90" data-translate="footerRights">© 2025 All rights reserved.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="contactInfo">Contact Information</h4>
+                    <p class="opacity-90 mb-2">📞 Phone: +220 XXX-XXXX</p>
+                    <p class="opacity-90 mb-2">✉️ Email: info@tallindingislamic.edu</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="addressLabel">Address</h4>
+                    <p class="opacity-90" data-translate="address">Tallinding, The Gambia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

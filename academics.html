@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Tallinding Islamic Institution</title>
+    <meta name="description" content="Explore our academic programs including Islamic Studies, General Academics, and Arabic Language.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Translations -->
+    <script src="assets/js/translations.js"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-green': '#A8D5A2',
+                        'dark-green': '#4C7F4C',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-dark-green font-heading text-2xl font-bold" data-translate="schoolName">
+                    <a href="index.html">Tallinding Islamic Institution</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-light-green underline font-semibold" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Desktop -->
+                    <div class="lang-switcher ml-4">
+                        <button id="lang-ar" class="lang-btn active">العربية</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-dark-green">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="index.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-light-green font-semibold" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Mobile -->
+                    <div class="lang-switcher pt-4 border-t border-gray-200">
+                        <button id="lang-ar-mobile" class="lang-btn active">العربية</button>
+                        <button id="lang-en-mobile" class="lang-btn">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-light-green to-dark-green text-white py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4" data-translate="academicsTitle">Our Academic Programs</h1>
+            <p class="text-xl opacity-90" data-translate="academicsSubtitle">Comprehensive education combining Islamic knowledge with modern academics</p>
+        </div>
+    </section>
+
+    <!-- Islamic Studies Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-3xl md:text-4xl text-dark-green mb-8 text-center" data-translate="islamicStudiesTitle">Islamic Studies</h2>
+                <p class="text-lg text-gray-700 mb-8 text-center" data-translate="islamicStudiesDesc">
+                    Our Islamic Studies program provides comprehensive religious education, ensuring students develop 
+                    a strong foundation in Islamic knowledge and practice.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-light-green bg-opacity-20 rounded-lg p-6 card-hover">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">📿</span>
+                            <div>
+                                <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="quranTitle">Qur'an Memorization</h3>
+                                <p class="text-gray-700" data-translate="quranDesc">Systematic memorization of the Holy Qur'an with proper Tajweed and understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-light-green bg-opacity-20 rounded-lg p-6 card-hover">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">📜</span>
+                            <div>
+                                <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="hadithTitle">Hadith</h3>
+                                <p class="text-gray-700" data-translate="hadithDesc">Study of the sayings and actions of Prophet Muhammad (peace be upon him).</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-light-green bg-opacity-20 rounded-lg p-6 card-hover">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">⚖️</span>
+                            <div>
+                                <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="fiqhTitle">Fiqh</h3>
+                                <p class="text-gray-700" data-translate="fiqhDesc">Islamic jurisprudence covering worship, transactions, and daily life matters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-light-green bg-opacity-20 rounded-lg p-6 card-hover">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">✍️</span>
+                            <div>
+                                <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="arabicTitle">Arabic</h3>
+                                <p class="text-gray-700" data-translate="arabicDesc">Comprehensive Arabic language studies including grammar, vocabulary, and literature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Studies Section -->
+    <section class="py-16 md:py-24 bg-light-green bg-opacity-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-3xl md:text-4xl text-dark-green mb-8 text-center" data-translate="generalStudiesTitle">General Studies</h2>
+                <p class="text-lg text-gray-700 mb-8 text-center" data-translate="generalStudiesDesc">
+                    Our general academic program ensures students receive quality education in core subjects, 
+                    preparing them for further studies and future careers.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg p-6 card-hover">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">🔢</span>
+                            <div>
+                                <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="mathTitle">Mathematics</h3>
+                                <p class="text-gray-700" data-translate="mathDesc">Comprehensive math curriculum from basic arithmetic to advanced algebra and geometry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 card-hover">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">📝</span>
+                            <div>
+                                <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="englishTitle">English</h3>
+                                <p class="text-gray-700" data-translate="englishDesc">Language skills development including reading, writing, speaking, and comprehension.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 card-hover">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">🔬</span>
+                            <div>
+                                <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="scienceTitle">Science</h3>
+                                <p class="text-gray-700" data-translate="scienceDesc">Biology, Chemistry, and Physics taught with practical experiments and demonstrations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 card-hover">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">🌍</span>
+                            <div>
+                                <h3 class="font-heading text-xl text-dark-green mb-2" data-translate="socialTitle">Social Studies</h3>
+                                <p class="text-gray-700" data-translate="socialDesc">History, Geography, and Civics to understand our world and society.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Structure Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="curriculumTitle">Academic Stages</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Stage 1 -->
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <div class="bg-dark-green text-white rounded-full w-16 h-16 flex items-center justify-center font-heading text-2xl font-bold flex-shrink-0">
+                            1
+                        </div>
+                        <div class="bg-light-green bg-opacity-20 rounded-lg p-6 flex-1 card-hover">
+                            <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="stage1Title">Foundation Stage</h3>
+                            <p class="text-gray-700" data-translate="stage1Desc">Introduction to basic Islamic teachings, Arabic alphabet, and fundamental academic skills. Ages 5-7.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stage 2 -->
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <div class="bg-dark-green text-white rounded-full w-16 h-16 flex items-center justify-center font-heading text-2xl font-bold flex-shrink-0">
+                            2
+                        </div>
+                        <div class="bg-light-green bg-opacity-20 rounded-lg p-6 flex-1 card-hover">
+                            <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="stage2Title">Elementary Stage</h3>
+                            <p class="text-gray-700" data-translate="stage2Desc">Building on foundations with structured Qur'an memorization, Hadith studies, and core academic subjects. Ages 8-10.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stage 3 -->
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <div class="bg-dark-green text-white rounded-full w-16 h-16 flex items-center justify-center font-heading text-2xl font-bold flex-shrink-0">
+                            3
+                        </div>
+                        <div class="bg-light-green bg-opacity-20 rounded-lg p-6 flex-1 card-hover">
+                            <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="stage3Title">Intermediate Stage</h3>
+                            <p class="text-gray-700" data-translate="stage3Desc">Advanced Islamic studies including Fiqh, deeper Arabic studies, and expanded general academics. Ages 11-13.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stage 4 -->
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <div class="bg-dark-green text-white rounded-full w-16 h-16 flex items-center justify-center font-heading text-2xl font-bold flex-shrink-0">
+                            4
+                        </div>
+                        <div class="bg-light-green bg-opacity-20 rounded-lg p-6 flex-1 card-hover">
+                            <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="stage4Title">Advanced Stage</h3>
+                            <p class="text-gray-700" data-translate="stage4Desc">Preparation for higher education with comprehensive Islamic scholarship and academic excellence. Ages 14+.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-green text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-heading text-2xl mb-4" data-translate="schoolName">Tallinding Islamic Institution</h3>
+                    <p class="opacity-90" data-translate="footerRights">© 2025 All rights reserved.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="contactInfo">Contact Information</h4>
+                    <p class="opacity-90 mb-2">📞 Phone: +220 XXX-XXXX</p>
+                    <p class="opacity-90 mb-2">✉️ Email: info@tallindingislamic.edu</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="addressLabel">Address</h4>
+                    <p class="opacity-90" data-translate="address">Tallinding, The Gambia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tallinding Islamic Institution</title>
+    <meta name="description" content="Learn about Tallinding Islamic Institution - our history, mission, vision, and core values.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Translations -->
+    <script src="assets/js/translations.js"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-green': '#A8D5A2',
+                        'dark-green': '#4C7F4C',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-dark-green font-heading text-2xl font-bold" data-translate="schoolName">
+                    <a href="index.html">Tallinding Islamic Institution</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-light-green underline font-semibold" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Desktop -->
+                    <div class="lang-switcher ml-4">
+                        <button id="lang-ar" class="lang-btn active">العربية</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-dark-green">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="index.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-light-green font-semibold" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Mobile -->
+                    <div class="lang-switcher pt-4 border-t border-gray-200">
+                        <button id="lang-ar-mobile" class="lang-btn active">العربية</button>
+                        <button id="lang-en-mobile" class="lang-btn">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-br from-light-green to-dark-green text-white py-16 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4" data-translate="aboutPageTitle">About Our Institution</h1>
+            <p class="text-xl opacity-90" data-translate="aboutPageSubtitle">Building futures through Islamic education and academic excellence</p>
+        </div>
+    </section>
+
+    <!-- School History Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-heading text-3xl md:text-4xl text-dark-green mb-8 text-center" data-translate="historyTitle">Our History</h2>
+                <div class="prose prose-lg max-w-none text-gray-700">
+                    <p class="mb-4 text-lg" data-translate="historyText1">
+                        Tallinding Islamic Institution was founded with a vision to provide quality Islamic education 
+                        combined with modern academic excellence. For many years, we have been serving the Tallinding 
+                        community and beyond, nurturing young minds with the teachings of Islam and preparing them 
+                        for success in both religious and worldly matters.
+                    </p>
+                    <p class="mb-4 text-lg" data-translate="historyText2">
+                        Our institution has grown from humble beginnings to become a respected center of learning, 
+                        known for its commitment to Islamic values, academic rigor, and character development. We 
+                        take pride in our role as educators and mentors, guiding students on their journey to become 
+                        knowledgeable, disciplined, and faithful individuals.
+                    </p>
+                    <p class="text-lg" data-translate="historyText3">
+                        Throughout our history, we have maintained a strong connection with the local community, 
+                        working together to ensure that Islamic education remains accessible and relevant to the 
+                        needs of our students and their families.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-16 md:py-24 bg-light-green bg-opacity-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Mission -->
+                <div class="bg-white rounded-lg shadow-md p-8 card-hover">
+                    <h2 class="font-heading text-3xl text-dark-green mb-6 text-center" data-translate="missionTitle">Our Mission</h2>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-3">✓</span>
+                            <span data-translate="mission1">Promoting Islamic morals and values in all aspects of education</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-3">✓</span>
+                            <span data-translate="mission2">Fostering academic growth and intellectual development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-3">✓</span>
+                            <span data-translate="mission3">Nurturing responsible citizenship and community engagement</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-3">✓</span>
+                            <span data-translate="mission4">Providing a safe and supportive learning environment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-light-green text-2xl mr-3">✓</span>
+                            <span data-translate="mission5">Preparing students for success in both this life and the hereafter</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Vision -->
+                <div class="bg-white rounded-lg shadow-md p-8 card-hover">
+                    <h2 class="font-heading text-3xl text-dark-green mb-6 text-center" data-translate="visionTitle">Our Vision</h2>
+                    <p class="text-gray-700 text-lg mb-4" data-translate="visionText1">
+                        To be a leading Islamic educational institution that produces well-rounded individuals who 
+                        excel academically, embody Islamic values, and contribute positively to society.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-4" data-translate="visionText2">
+                        We envision a future where our graduates are recognized for their knowledge, character, 
+                        and commitment to serving their communities with wisdom and compassion.
+                    </p>
+                    <p class="text-gray-700 text-lg" data-translate="visionText3">
+                        Through continuous improvement and dedication to excellence, we strive to maintain our 
+                        position as a trusted institution for Islamic education in The Gambia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="valuesTitle">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Discipline -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-5xl mb-4">⚖️</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="value1Title">Discipline</h3>
+                    <p class="text-gray-700" data-translate="value1Desc">We instill self-discipline and respect for rules and regulations in all our students.</p>
+                </div>
+                
+                <!-- Respect -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-5xl mb-4">🤝</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="value2Title">Respect</h3>
+                    <p class="text-gray-700" data-translate="value2Desc">We teach respect for teachers, peers, parents, and all members of the community.</p>
+                </div>
+                
+                <!-- Knowledge -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-5xl mb-4">📚</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="value3Title">Knowledge</h3>
+                    <p class="text-gray-700" data-translate="value3Desc">We pursue knowledge in both Islamic and secular subjects with dedication and excellence.</p>
+                </div>
+                
+                <!-- Faith -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-5xl mb-4">🕌</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="value4Title">Faith</h3>
+                    <p class="text-gray-700" data-translate="value4Desc">We strengthen faith through Islamic teachings and daily practice of religious obligations.</p>
+                </div>
+                
+                <!-- Integrity -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-5xl mb-4">💎</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="value5Title">Integrity</h3>
+                    <p class="text-gray-700" data-translate="value5Desc">We uphold honesty, truthfulness, and moral uprightness in all our actions.</p>
+                </div>
+                
+                <!-- Community -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-5xl mb-4">🌍</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-3" data-translate="value6Title">Community</h3>
+                    <p class="text-gray-700" data-translate="value6Desc">We foster a sense of belonging and responsibility towards our community and society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-green text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-heading text-2xl mb-4" data-translate="schoolName">Tallinding Islamic Institution</h3>
+                    <p class="opacity-90" data-translate="footerRights">© 2025 All rights reserved.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="contactInfo">Contact Information</h4>
+                    <p class="opacity-90 mb-2">📞 Phone: +220 XXX-XXXX</p>
+                    <p class="opacity-90 mb-2">✉️ Email: info@tallindingislamic.edu</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="addressLabel">Address</h4>
+                    <p class="opacity-90" data-translate="address">Tallinding, The Gambia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

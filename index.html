@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tallinding Islamic Institution - Home</title>
+    <meta name="description" content="Tallinding Islamic Institution - A foundation of knowledge, discipline, and Islamic values.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Translations -->
+    <script src="assets/js/translations.js"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-green': '#A8D5A2',
+                        'dark-green': '#4C7F4C',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-dark-green font-heading text-2xl font-bold" data-translate="schoolName">
+                    Tallinding Islamic Institution
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Desktop -->
+                    <div class="lang-switcher ml-4">
+                        <button id="lang-ar" class="lang-btn active">العربية</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-dark-green">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="index.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navHome">Home</a>
+                    <a href="about.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAbout">About</a>
+                    <a href="academics.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAdmissions">Admissions</a>
+                    <a href="gallery.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navGallery">Gallery</a>
+                    <a href="staff.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navStaff">Staff</a>
+                    <a href="contact.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navContact">Contact</a>
+                    
+                    <!-- Language Switcher - Mobile -->
+                    <div class="lang-switcher pt-4 border-t border-gray-200">
+                        <button id="lang-ar-mobile" class="lang-btn active">العربية</button>
+                        <button id="lang-en-mobile" class="lang-btn">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Carousel -->
+    <section class="hero-carousel relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
+        <!-- Carousel Images Container -->
+        <!-- Add your hero images: assets/images/hero-1.jpg, hero-2.jpg, hero-3.jpg, hero-4.jpg -->
+        <div class="carousel-container absolute inset-0">
+            <div class="carousel-slide active" data-bg="assets/images/hero-1.jpg"></div>
+            <div class="carousel-slide" data-bg="assets/images/hero-2.jpg"></div>
+            <div class="carousel-slide" data-bg="assets/images/hero-3.jpg"></div>
+            <div class="carousel-slide" data-bg="assets/images/hero-4.jpg"></div>
+        </div>
+        
+        <!-- Light Green Overlay -->
+        <div class="absolute inset-0 bg-light-green opacity-45 z-10"></div>
+        
+        <!-- Hero Content -->
+        <div class="container mx-auto px-4 relative z-20 h-full flex items-center justify-center">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white drop-shadow-lg" data-translate="heroTitle">Tallinding Islamic Institution</h1>
+                <p class="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-white drop-shadow-md" data-translate="heroTagline">A foundation of knowledge, discipline, and Islamic values.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="admissions.html" class="bg-white text-dark-green px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-light-green hover:text-white transition duration-300 shadow-lg text-sm md:text-base" data-translate="admissionsBtn">Admissions</a>
+                    <a href="contact.html" class="bg-transparent border-2 border-white text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-dark-green transition duration-300 text-sm md:text-base" data-translate="contactBtn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-heading text-3xl md:text-4xl text-dark-green mb-6" data-translate="aboutTitle">About Our Institution</h2>
+                <p class="text-lg text-gray-700 mb-6" data-translate="aboutText1">
+                    Tallinding Islamic Institution has been serving the community for years, providing quality Islamic education 
+                    combined with academic excellence. Our institution is built on the foundation of Islamic values, promoting 
+                    discipline, respect, and moral integrity among our students.
+                </p>
+                <p class="text-lg text-gray-700 mb-8" data-translate="aboutText2">
+                    We are committed to nurturing young minds with both religious knowledge and modern education, ensuring 
+                    our students grow into responsible, knowledgeable, and faithful members of society.
+                </p>
+                <a href="about.html" class="inline-block text-dark-green hover:text-light-green font-semibold hover:underline transition duration-300" data-translate="readMore">Read More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Preview Section -->
+    <section class="py-16 md:py-24 bg-light-green bg-opacity-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="programsTitle">Our Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Islamic Studies Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-5xl mb-4 text-center">📖</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-4 text-center" data-translate="programIslamic">Islamic Studies</h3>
+                    <p class="text-gray-700 mb-6 text-center" data-translate="programIslamicDesc">
+                        Comprehensive Islamic education including Qur'an memorization, Hadith, Fiqh, and Islamic history.
+                    </p>
+                    <a href="academics.html" class="block text-center text-dark-green hover:text-light-green font-semibold hover:underline transition duration-300" data-translate="learnMore">Learn More →</a>
+                </div>
+                
+                <!-- General Academics Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-5xl mb-4 text-center">📚</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-4 text-center" data-translate="programAcademic">General Academics</h3>
+                    <p class="text-gray-700 mb-6 text-center" data-translate="programAcademicDesc">
+                        Quality education in Mathematics, English, Science, and Social Studies aligned with national standards.
+                    </p>
+                    <a href="academics.html" class="block text-center text-dark-green hover:text-light-green font-semibold hover:underline transition duration-300" data-translate="learnMore">Learn More →</a>
+                </div>
+                
+                <!-- Arabic Language Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <div class="text-5xl mb-4 text-center">✍️</div>
+                    <h3 class="font-heading text-2xl text-dark-green mb-4 text-center" data-translate="programArabic">Arabic Language</h3>
+                    <p class="text-gray-700 mb-6 text-center" data-translate="programArabicDesc">
+                        Master the Arabic language through structured courses designed for both beginners and advanced learners.
+                    </p>
+                    <a href="academics.html" class="block text-center text-dark-green hover:text-light-green font-semibold hover:underline transition duration-300" data-translate="learnMore">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Highlights Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="highlightsTitle">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Safe Learning Environment -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="font-heading text-xl text-dark-green mb-3" data-translate="highlight1Title">Safe Learning Environment</h3>
+                    <p class="text-gray-700" data-translate="highlight1Desc">A secure and nurturing environment where students can learn and grow peacefully.</p>
+                </div>
+                
+                <!-- Qualified Scholars -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-4xl mb-4">👨‍🏫</div>
+                    <h3 class="font-heading text-xl text-dark-green mb-3" data-translate="highlight2Title">Qualified Islamic Scholars</h3>
+                    <p class="text-gray-700" data-translate="highlight2Desc">Learn from experienced and knowledgeable Islamic scholars and educators.</p>
+                </div>
+                
+                <!-- Academic Excellence -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-4xl mb-4">⭐</div>
+                    <h3 class="font-heading text-xl text-dark-green mb-3" data-translate="highlight3Title">Academic Excellence</h3>
+                    <p class="text-gray-700" data-translate="highlight3Desc">High standards of academic achievement combined with Islamic values.</p>
+                </div>
+                
+                <!-- Moral Discipline -->
+                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
+                    <div class="text-4xl mb-4">🌱</div>
+                    <h3 class="font-heading text-xl text-dark-green mb-3" data-translate="highlight4Title">Moral Discipline</h3>
+                    <p class="text-gray-700" data-translate="highlight4Desc">Character building and moral development integrated into daily learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="py-16 md:py-24 bg-dark-green text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-heading text-3xl md:text-4xl mb-6" data-translate="ctaTitle">Enroll Your Child in a School Where Knowledge Meets Values</h2>
+            <p class="text-xl mb-8 opacity-90" data-translate="ctaSubtitle">Join us in nurturing the next generation of knowledgeable and faithful Muslims.</p>
+            <a href="admissions.html" class="inline-block bg-white text-dark-green px-8 py-3 rounded-lg font-semibold hover:bg-light-green hover:text-white transition duration-300 shadow-lg" data-translate="applyBtn">Apply for Admission</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-green text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-heading text-2xl mb-4" data-translate="schoolName">Tallinding Islamic Institution</h3>
+                    <p class="opacity-90" data-translate="footerRights">© 2025 All rights reserved.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="contactInfo">Contact Information</h4>
+                    <p class="opacity-90 mb-2">📞 Phone: +220 XXX-XXXX</p>
+                    <p class="opacity-90 mb-2">✉️ Email: info@tallindingislamic.edu</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg mb-4" data-translate="addressLabel">Address</h4>
+                    <p class="opacity-90" data-translate="address">Tallinding, The Gambia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
