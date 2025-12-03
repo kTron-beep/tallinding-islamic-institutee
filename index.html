@@ -3,242 +3,499 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tallinding Islamic Institution - Home</title>
-    <meta name="description" content="Tallinding Islamic Institution - A foundation of knowledge, discipline, and Islamic values.">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom CSS -->
+    <title>Tallinding Islamic Institute | Excellence in Islamic Education</title>
+    <meta name="description" content="Tallinding Islamic Institute delivers excellence in Islamic and academic education since 1963.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <!-- Translations -->
     <script src="assets/js/translations.js"></script>
-    
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'light-green': '#A8D5A2',
-                        'dark-green': '#4C7F4C',
-                    },
-                    fontFamily: {
-                        'heading': ['Poppins', 'sans-serif'],
-                        'body': ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
 </head>
-<body class="font-body">
-    <!-- Navigation Bar -->
-    <nav id="navbar" class="bg-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <div class="text-dark-green font-heading text-2xl font-bold" data-translate="schoolName">
-                    Tallinding Islamic Institution
+<body data-page="home">
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <div class="logo-text">
+                        <h1>
+                            <span>Tallinding</span>
+                            <span>Islamic</span>
+                            <span>Institute</span>
+                        </h1>
+                    </div>
                 </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="index.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navHome">Home</a>
-                    <a href="about.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAbout">About</a>
-                    <a href="academics.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAcademics">Academics</a>
-                    <a href="admissions.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navAdmissions">Admissions</a>
-                    <a href="gallery.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navGallery">Gallery</a>
-                    <a href="staff.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navStaff">Staff</a>
-                    <a href="contact.html" class="text-dark-green hover:text-light-green hover:underline transition duration-300" data-translate="navContact">Contact</a>
-                    
-                    <!-- Language Switcher - Desktop -->
-                    <div class="lang-switcher ml-4">
+                <div class="header-right">
+                    <div class="language-switcher">
                         <button id="lang-ar" class="lang-btn active">العربية</button>
                         <button id="lang-en" class="lang-btn">EN</button>
                     </div>
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="md:hidden text-dark-green">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
             </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html" data-nav-item="home" data-translate="navHome">Home</a></li>
+                    <li><a href="about.html" data-nav-item="about" data-translate="navAbout">About</a></li>
+                    <li><a href="academics.html" data-nav-item="academics" data-translate="navAcademics">Academics</a></li>
+                    <li><a href="admissions.html" data-nav-item="admissions" data-translate="navAdmissions">Admissions</a></li>
+                    <li><a href="staff.html" data-nav-item="staff" data-translate="navStaff">Staff</a></li>
+                    <li><a href="gallery.html" data-nav-item="gallery" data-translate="navGallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="header-banner">
+                <div class="gambian-flag">
+                    <div class="flag-stripe flag-red"></div>
+                    <div class="flag-stripe flag-white"></div>
+                    <div class="flag-stripe flag-blue"></div>
+                    <div class="flag-stripe flag-white"></div>
+                    <div class="flag-stripe flag-green"></div>
+                </div>
+                <div class="institute-tagline">
+                    <p data-translate="headerTagline">Excellence in Islamic Education Since 1963</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="white-line-separator"></div>
+
+    <div class="mobile-drawer" id="mobile-drawer">
+        <button class="mobile-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+        <ul>
+            <li><a href="index.html" data-nav-item="home" data-translate="navHome">Home</a></li>
+            <li><a href="about.html" data-nav-item="about" data-translate="navAbout">About</a></li>
+            <li><a href="academics.html" data-nav-item="academics" data-translate="navAcademics">Academics</a></li>
+            <li><a href="admissions.html" data-nav-item="admissions" data-translate="navAdmissions">Admissions</a></li>
+            <li><a href="gallery.html" data-nav-item="gallery" data-translate="navGallery">Gallery</a></li>
+            <li><a href="staff.html" data-nav-item="staff" data-translate="navStaff">Staff</a></li>
+        </ul>
+        <div class="language-switcher">
+            <button id="lang-ar-mobile" class="lang-btn active">العربية</button>
+            <button id="lang-en-mobile" class="lang-btn">EN</button>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <!-- Hero Image Carousel -->
+        <div class="hero-carousel">
+            <div class="carousel-slide active" data-bg="assets/assets/images/hero-1.jpg"></div>
+            <div class="carousel-slide" data-bg="assets/assets/images/hero-2.jpg"></div>
+            <div class="carousel-slide" data-bg="assets/assets/images/hero-3.jpg"></div>
+            <div class="carousel-slide" data-bg="assets/assets/images/hero-4.jpg"></div>
             
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="mobile-menu md:hidden">
-                <div class="flex flex-col space-y-4 py-4">
-                    <a href="index.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navHome">Home</a>
-                    <a href="about.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAbout">About</a>
-                    <a href="academics.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAcademics">Academics</a>
-                    <a href="admissions.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navAdmissions">Admissions</a>
-                    <a href="gallery.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navGallery">Gallery</a>
-                    <a href="staff.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navStaff">Staff</a>
-                    <a href="contact.html" class="text-dark-green hover:text-light-green transition duration-300" data-translate="navContact">Contact</a>
-                    
-                    <!-- Language Switcher - Mobile -->
-                    <div class="lang-switcher pt-4 border-t border-gray-200">
-                        <button id="lang-ar-mobile" class="lang-btn active">العربية</button>
-                        <button id="lang-en-mobile" class="lang-btn">EN</button>
+            <!-- Carousel Navigation Buttons -->
+            <button class="carousel-btn carousel-btn-prev" aria-label="Previous image">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-btn-next" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Carousel Overlay -->
+            <div class="carousel-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" class="search-input" id="siteSearchInput" placeholder="Search courses, programs, and more...">
+                    <button class="search-button" id="siteSearchButton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="spell-check-indicator" id="spellCheckIndicator"></div>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+                <div class="search-results-nav" id="searchResultsNav">
+                    <div class="search-results-header">
+                        <div class="search-results-count" id="searchResultsCount">0 matches found</div>
+                        <button class="search-results-close" id="searchResultsClose">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="search-results-list" id="searchResultsList"></div>
+                    <div class="search-nav-buttons">
+                        <button class="search-nav-button" id="prevMatch" disabled>
+                            <i class="fas fa-chevron-left"></i> <span data-translate="prevMatch">Previous</span>
+                        </button>
+                        <button class="search-nav-button" id="nextMatch" disabled>
+                            <span data-translate="nextMatch">Next</span> <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="arabic-text arabic-text-red">المعهد الإسلامي بتلند كنجا</h2>
+            <h2 class="arabic-text arabic-text-blue">التابع للاتحاد الإسلامي الغمبي</h2>
+            <div class="establishment-date" data-translate="establishedDate">تأسيس:١٣٨٢ هـ١٩٨٤م</div>
+            <a href="admissions.html" class="btn" data-translate="applyBtn">Apply for Admission</a>
+        </div>
+    </section>
+
+    <section class="badge-section">
+        <div class="container">
+            <div class="badge-container">
+                <div class="badge-image">
+                    <img src="assets/assets/images/school_badge.jpg" alt="School Badge">
+                </div>
+                <div class="badge-arabic">المعهد الإسلامي بتلند كنجا</div>
+                <div class="badge-details">
+                    <p class="established" data-translate="badgeEst">EST: 1963</p>
+                    <p class="gambia-union" data-translate="badgeUnion">THE GAMBIA ISLAMIC UNION</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="aboutTitle">About Our Institute</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-translate="aboutWelcomeTitle">Welcome to Tallinding Islamic Institute</h3>
+                    <p data-translate="aboutText1">
+                        Tallinding Islamic Institution has been serving the community for years, providing quality Islamic education 
+                        combined with academic excellence. Our institution is built on the foundation of Islamic values, promoting 
+                        discipline, respect, and moral integrity among our students.
+                    </p>
+                    <p data-translate="aboutText2">
+                        We are committed to nurturing young minds with both religious knowledge and modern education, ensuring 
+                        our students grow into responsible, knowledgeable, and faithful members of society.
+                    </p>
+                    <a href="about.html" class="btn" data-translate="readMore">Read More →</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/assets/images/school_photo.jpg" alt="Institute building">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-vision" id="mission-vision">
+        <div class="container mission-vision-container">
+            <div class="mission-vision-header">
+                <h2 data-translate="missionVisionTitle">Our Mission & Vision</h2>
+            </div>
+            <div class="mission-vision-content">
+                <div class="mission-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="card-title arabic">رسالتنا</h3>
+                    <h3 class="card-title" data-translate="missionTitle">Our Mission</h3>
+                    <div class="card-content">
+                        <div class="mission-item arabic">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text arabic">قيادة مدرسية تربوية فعالة.</div>
+                        </div>
+                        <div class="mission-item arabic">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text arabic">التعاون المثمر بين أعضاء هيئة التدريس.</div>
+                        </div>
+                        <div class="mission-item arabic">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text arabic">إعداد تلميذ متميز قادر على القراءة والكتابة والتفكير والإبداع.</div>
+                        </div>
+                        <div class="mission-item arabic">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text arabic">تخريج فئة واعية بدينها قادرة على خدمة وطنها.</div>
+                        </div>
+                        <div class="mission-item arabic">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text arabic">التواصل مع أولياء الأمور لتنشيط دور المجتمع مع المدرسة.</div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text english" data-translate="mission1">Promoting Islamic morals and values in all aspects of education.</div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text english" data-translate="mission2">Fostering academic growth and intellectual development.</div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text english" data-translate="mission3">Nurturing responsible citizenship and community engagement.</div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text english" data-translate="mission4">Providing a safe and supportive learning environment.</div>
+                        </div>
+                        <div class="mission-item">
+                            <div class="mission-icon"><i class="fas fa-check"></i></div>
+                            <div class="mission-text english" data-translate="mission5">Preparing students for success in this life and the hereafter.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="card-title arabic">رؤيتنا</h3>
+                    <h3 class="card-title" data-translate="visionTitle">Our Vision</h3>
+                    <div class="card-content">
+                        <div class="vision-item arabic">
+                            <div class="vision-icon"><i class="fas fa-star"></i></div>
+                            <div class="vision-text arabic">تهيئة جيل مسلم قادر على مواجهة التحديات المعاصرة تحت سقف علمي مناسب استنادا على الكتاب والسنة، وواع بالطور العلمي والتكنلوجي.</div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="vision-item">
+                            <div class="vision-icon"><i class="fas fa-star"></i></div>
+                            <div class="vision-text english" data-translate="visionText1">
+                                Preparing a future Muslim generation capable of facing contemporary challenges under an appropriate scientific framework, based on the Qur'an and Sunnah, and aware of the scientific and technological development.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- Hero Section - Carousel -->
-    <section class="hero-carousel relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
-        <!-- Carousel Images Container -->
-        <!-- Add your hero images: assets/images/hero-1.jpg, hero-2.jpg, hero-3.jpg, hero-4.jpg -->
-        <div class="carousel-container absolute inset-0">
-            <div class="carousel-slide active" data-bg="assets/images/hero-1.jpg"></div>
-            <div class="carousel-slide" data-bg="assets/images/hero-2.jpg"></div>
-            <div class="carousel-slide" data-bg="assets/images/hero-3.jpg"></div>
-            <div class="carousel-slide" data-bg="assets/images/hero-4.jpg"></div>
-        </div>
-        
-        <!-- Light Green Overlay -->
-        <div class="absolute inset-0 bg-light-green opacity-45 z-10"></div>
-        
-        <!-- Hero Content -->
-        <div class="container mx-auto px-4 relative z-20 h-full flex items-center justify-center">
-            <div class="text-center max-w-3xl mx-auto">
-                <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white drop-shadow-lg" data-translate="heroTitle">Tallinding Islamic Institution</h1>
-                <p class="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-white drop-shadow-md" data-translate="heroTagline">A foundation of knowledge, discipline, and Islamic values.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="admissions.html" class="bg-white text-dark-green px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-light-green hover:text-white transition duration-300 shadow-lg text-sm md:text-base" data-translate="admissionsBtn">Admissions</a>
-                    <a href="contact.html" class="bg-transparent border-2 border-white text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-dark-green transition duration-300 text-sm md:text-base" data-translate="contactBtn">Contact</a>
+    <section class="programs" id="academics">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="programsTitle">Our Programs</h2>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon"><i class="fas fa-quran"></i></div>
+                    <div class="program-content">
+                        <h3 data-translate="programIslamic">Islamic Studies</h3>
+                        <p data-translate="programIslamicDesc">
+                            Comprehensive Islamic education including Qur'an memorization, Hadith, Fiqh, and Islamic history.
+                        </p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="program-content">
+                        <h3 data-translate="programAcademic">General Academics</h3>
+                        <p data-translate="programAcademicDesc">
+                            Quality education in Mathematics, English, Science, and Social Studies aligned with national standards.
+                        </p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fas fa-globe"></i></div>
+                    <div class="program-content">
+                        <h3 data-translate="programArabic">Arabic Language</h3>
+                        <p data-translate="programArabicDesc">
+                            Master the Arabic language through structured courses designed for both beginners and advanced learners.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Preview Section -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="font-heading text-3xl md:text-4xl text-dark-green mb-6" data-translate="aboutTitle">About Our Institution</h2>
-                <p class="text-lg text-gray-700 mb-6" data-translate="aboutText1">
-                    Tallinding Islamic Institution has been serving the community for years, providing quality Islamic education 
-                    combined with academic excellence. Our institution is built on the foundation of Islamic values, promoting 
-                    discipline, respect, and moral integrity among our students.
-                </p>
-                <p class="text-lg text-gray-700 mb-8" data-translate="aboutText2">
-                    We are committed to nurturing young minds with both religious knowledge and modern education, ensuring 
-                    our students grow into responsible, knowledgeable, and faithful members of society.
-                </p>
-                <a href="about.html" class="inline-block text-dark-green hover:text-light-green font-semibold hover:underline transition duration-300" data-translate="readMore">Read More →</a>
+    <section class="admissions" id="admissions">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="admissionsTitle">Admissions</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Programs Preview Section -->
-    <section class="py-16 md:py-24 bg-light-green bg-opacity-20">
-        <div class="container mx-auto px-4">
-            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="programsTitle">Our Programs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Islamic Studies Card -->
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="text-5xl mb-4 text-center">📖</div>
-                    <h3 class="font-heading text-2xl text-dark-green mb-4 text-center" data-translate="programIslamic">Islamic Studies</h3>
-                    <p class="text-gray-700 mb-6 text-center" data-translate="programIslamicDesc">
-                        Comprehensive Islamic education including Qur'an memorization, Hadith, Fiqh, and Islamic history.
+            <div class="admissions-content">
+                <div class="admissions-text">
+                    <h3 data-translate="admissionsHomeHeading">Join Our Community</h3>
+                    <p data-translate="admissionsHomeText1">
+                        We welcome students from all backgrounds who seek a nurturing Islamic environment combined with rigorous academics.
                     </p>
-                    <a href="academics.html" class="block text-center text-dark-green hover:text-light-green font-semibold hover:underline transition duration-300" data-translate="learnMore">Learn More →</a>
-                </div>
-                
-                <!-- General Academics Card -->
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="text-5xl mb-4 text-center">📚</div>
-                    <h3 class="font-heading text-2xl text-dark-green mb-4 text-center" data-translate="programAcademic">General Academics</h3>
-                    <p class="text-gray-700 mb-6 text-center" data-translate="programAcademicDesc">
-                        Quality education in Mathematics, English, Science, and Social Studies aligned with national standards.
+                    <p data-translate="admissionsHomeText2">
+                        Applications for the upcoming academic year are now open. Financial aid and scholarships are available for eligible students.
                     </p>
-                    <a href="academics.html" class="block text-center text-dark-green hover:text-light-green font-semibold hover:underline transition duration-300" data-translate="learnMore">Learn More →</a>
+                    <a href="#contact" class="btn" data-translate="requestInfoBtn">Request Information</a>
                 </div>
-                
-                <!-- Arabic Language Card -->
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="text-5xl mb-4 text-center">✍️</div>
-                    <h3 class="font-heading text-2xl text-dark-green mb-4 text-center" data-translate="programArabic">Arabic Language</h3>
-                    <p class="text-gray-700 mb-6 text-center" data-translate="programArabicDesc">
-                        Master the Arabic language through structured courses designed for both beginners and advanced learners.
-                    </p>
-                    <a href="academics.html" class="block text-center text-dark-green hover:text-light-green font-semibold hover:underline transition duration-300" data-translate="learnMore">Learn More →</a>
+                <div class="admissions-image">
+                    <img src="assets/assets/images/student's_in_classroom.jpg" alt="Students in classroom">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- School Highlights Section -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="font-heading text-3xl md:text-4xl text-dark-green text-center mb-12" data-translate="highlightsTitle">Why Choose Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Safe Learning Environment -->
-                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
-                    <div class="text-4xl mb-4">🛡️</div>
-                    <h3 class="font-heading text-xl text-dark-green mb-3" data-translate="highlight1Title">Safe Learning Environment</h3>
-                    <p class="text-gray-700" data-translate="highlight1Desc">A secure and nurturing environment where students can learn and grow peacefully.</p>
+    <section class="student-life" id="student-life">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="studentLifeTitle">Student Life</h2>
+            </div>
+            <div class="student-life-grid">
+                <div class="student-life-card">
+                    <div class="student-life-image">
+                        <img src="assets/assets/images/extracurricular.jpg" alt="Student activities">
+                    </div>
+                    <div class="student-life-content">
+                        <h3 data-translate="studentLifeActivitiesTitle">Extracurricular Activities</h3>
+                        <p data-translate="studentLifeActivitiesDesc">
+                            From sports to arts and service, students explore their talents while strengthening brotherhood.
+                        </p>
+                    </div>
                 </div>
-                
-                <!-- Qualified Scholars -->
-                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
-                    <div class="text-4xl mb-4">👨‍🏫</div>
-                    <h3 class="font-heading text-xl text-dark-green mb-3" data-translate="highlight2Title">Qualified Islamic Scholars</h3>
-                    <p class="text-gray-700" data-translate="highlight2Desc">Learn from experienced and knowledgeable Islamic scholars and educators.</p>
-                </div>
-                
-                <!-- Academic Excellence -->
-                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
-                    <div class="text-4xl mb-4">⭐</div>
-                    <h3 class="font-heading text-xl text-dark-green mb-3" data-translate="highlight3Title">Academic Excellence</h3>
-                    <p class="text-gray-700" data-translate="highlight3Desc">High standards of academic achievement combined with Islamic values.</p>
-                </div>
-                
-                <!-- Moral Discipline -->
-                <div class="bg-light-green bg-opacity-20 rounded-lg p-6 text-center card-hover">
-                    <div class="text-4xl mb-4">🌱</div>
-                    <h3 class="font-heading text-xl text-dark-green mb-3" data-translate="highlight4Title">Moral Discipline</h3>
-                    <p class="text-gray-700" data-translate="highlight4Desc">Character building and moral development integrated into daily learning.</p>
+                <div class="student-life-card">
+                    <div class="student-life-image">
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1400&q=80" alt="Leadership">
+                    </div>
+                    <div class="student-life-content">
+                        <h3 data-translate="studentLifeLeadershipTitle">Leadership Development</h3>
+                        <p data-translate="studentLifeLeadershipDesc">
+                            Structured programs help students cultivate confidence, teamwork, and responsibility grounded in Islamic values.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call-to-Action Section -->
-    <section class="py-16 md:py-24 bg-dark-green text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="font-heading text-3xl md:text-4xl mb-6" data-translate="ctaTitle">Enroll Your Child in a School Where Knowledge Meets Values</h2>
-            <p class="text-xl mb-8 opacity-90" data-translate="ctaSubtitle">Join us in nurturing the next generation of knowledgeable and faithful Muslims.</p>
-            <a href="admissions.html" class="inline-block bg-white text-dark-green px-8 py-3 rounded-lg font-semibold hover:bg-light-green hover:text-white transition duration-300 shadow-lg" data-translate="applyBtn">Apply for Admission</a>
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="newsHomeTitle">Latest News</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1400&q=80" alt="Graduation ceremony">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date" data-translate="newsDate1">May 28, 2023</div>
+                        <h3 data-translate="newsHeadline1">Class of 2023 Graduation Ceremony</h3>
+                        <p data-translate="newsExcerpt1">
+                            We celebrated the achievements of our graduating class at a memorable ceremony with families and community leaders.
+                        </p>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark-green text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="font-heading text-2xl mb-4" data-translate="schoolName">Tallinding Islamic Institution</h3>
-                    <p class="opacity-90" data-translate="footerRights">© 2025 All rights reserved.</p>
+    <section class="events" id="events">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="eventsHomeTitle">Upcoming Events</h2>
+            </div>
+            <div class="events-list">
+                <div class="event-item">
+                    <div class="event-date">
+                        <div class="day" data-translate="event1Day">15</div>
+                        <div class="month" data-translate="event1Month">July</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 data-translate="event1Title">Summer Islamic Program Registration</h3>
+                        <p class="event-time" data-translate="event1Time">9:00 AM - 3:00 PM</p>
+                        <p data-translate="event1Desc">Registration opens for our popular summer Islamic enrichment programs.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-heading text-lg mb-4" data-translate="contactInfo">Contact Information</h4>
-                    <p class="opacity-90 mb-2">📞 Phone: +220 XXX-XXXX</p>
-                    <p class="opacity-90 mb-2">✉️ Email: info@tallindingislamic.edu</p>
+                <div class="event-item">
+                    <div class="event-date">
+                        <div class="day" data-translate="event2Day">22</div>
+                        <div class="month" data-translate="event2Month">July</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 data-translate="event2Title">New Parent Orientation</h3>
+                        <p class="event-time" data-translate="event2Time">6:00 PM - 8:00 PM</p>
+                        <p data-translate="event2Desc">Welcome session for parents of newly enrolled students.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="font-heading text-lg mb-4" data-translate="addressLabel">Address</h4>
-                    <p class="opacity-90" data-translate="address">Tallinding, The Gambia</p>
+                <div class="event-item">
+                    <div class="event-date">
+                        <div class="day" data-translate="event3Day">05</div>
+                        <div class="month" data-translate="event3Month">August</div>
+                    </div>
+                    <div class="event-details">
+                        <h3 data-translate="event3Title">First Day of Academic Year</h3>
+                        <p class="event-time" data-translate="event3Time">All Day</p>
+                        <p data-translate="event3Desc">The 2023-2024 academic year begins. Welcome back, students and staff!</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-translate="contactTitle">Contact Us</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="getInTouch">Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i><span data-translate="address">Tallinding, The Gambia</span></p>
+                    <p><i class="fas fa-phone"></i> +220 XXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@tallindingislamic.edu</p>
+                    <p><i class="fas fa-clock"></i><span data-translate="hours1">Monday - Friday: 8:00 AM - 4:00 PM</span></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 data-translate="sendMessage">Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-translate="nameLabel">Name *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="emailFormLabel">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-translate="phoneFormLabel">Phone *</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="messageLabel">Message *</label>
+                            <textarea id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" data-translate="sendBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 data-translate="schoolName">Tallinding Islamic Institute</h3>
+                    <p data-translate="footerRights">© 2025 All rights reserved.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 data-translate="quickLinksTitle">Quick Links</h3>
+                    <a href="about.html" data-translate="navAbout">About</a>
+                    <a href="#mission-vision" data-translate="missionVisionLink">Mission & Vision</a>
+                    <a href="academics.html" data-translate="navAcademics">Academics</a>
+                    <a href="admissions.html" data-translate="navAdmissions">Admissions</a>
+                    <a href="#contact" data-translate="navContact">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h3 data-translate="resourcesTitle">Resources</h3>
+                    <a href="#" data-translate="parentPortal">Parent Portal</a>
+                    <a href="#" data-translate="studentResources">Student Resources</a>
+                    <a href="#" data-translate="facultyDirectory">Faculty Directory</a>
+                    <a href="#" data-translate="library">Library</a>
+                </div>
+                <div class="footer-column">
+                    <h3 data-translate="connectTitle">Connect With Us</h3>
+                    <p data-translate="connectText">Follow us on social media for updates and news.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p data-translate="footerRights">© 2025 All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>
